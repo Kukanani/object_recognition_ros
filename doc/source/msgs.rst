@@ -1,5 +1,7 @@
 .. _msgs:
 
+:orphan:
+
 Messages
 ########
 

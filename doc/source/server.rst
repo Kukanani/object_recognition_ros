@@ -5,16 +5,16 @@
 Actionlib Server
 ################
 
-The Actionlib server helps you retrieve the identified objects in the current snapshot.
-It is defined as follows:
+The Actionlib server helps you retrieve the identified objects in the current
+snapshot. It is defined as follows:
 
-.. literalinclude:: ../../../ork_msgs/action/ObjectRecognition.action
+.. literalinclude:: ../../../object_recognition_msgs/action/ObjectRecognition.action
 
 To run it, you just need to start it with:
 
 
 .. code-block:: sh
-   
+
       rosrun object_recognition_ros server -c whatever_config_file.ork
 
 You can also test it using the client:
@@ -37,7 +37,7 @@ For testing, you can even run the server with a test pipeline:
 Service
 #######
 
-There is a service to get object information: just query it and it will retrieve anything
-that is known about the object. Its definition is as follows:
+There is a service to get object information: just query it and it will retrieve
+anything that is known about the object. Its definition is as follows:
 
 .. program-output:: rossrv show -r object_recognition_msgs/GetObjectInformation.srv
